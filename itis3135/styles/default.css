@@ -12,9 +12,11 @@ a{
     font-size: 14px;
     color: white;
 }
-.home-text p, .home-text h2{
+main h2, main p{
     color: navy;
     text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 .intro-pic{
     height: 400px;
@@ -39,8 +41,8 @@ nav{
     color: white;
 }
 nav a{
-    top: auto;
-    bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 ul:nth-child(8){
     list-style-type: none;
