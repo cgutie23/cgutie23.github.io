@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Riot&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title>Calm Gecko Geeks || ITIS 3135</title>
+    <style>
+        html, body { 
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient( 75deg, rgb(108, 104, 104) 45%, rgb(128, 128, 136));
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            background-color: rgb(54, 69, 79);
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);;
+        }
+        h1{
+            font-family: "Montserrat", sans-serif;
+            color: white;
+            margin-left: 15px;
+        }
+        .main-text{
+            width: 50%;
+            height: 40%;
+            border: solid;
+            background-color: transparent;
+            color: rgb(246,246,246);
+            position: relative;
+            top: 35vh;
+            left: 28vw;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+        }
+        .main-text:hover{
+            background-color: white;
+            color: rgb(128, 128, 136);
+            cursor: pointer;
+        }
+        .navbar{
+            text-align: right;
+            padding-right: 15px;
+            padding-top: 30px;
+            font-family: "Montserrat", sans-serif;
+        }
+        footer a{
+            color: white;
+            text-decoration: none;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .navbar a:hover{
+            color:rgb(128, 128, 136);
+        }
+        
+        .footer-list{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin-top: -35px;
+        }
+        .footer-list a:hover{
+            color:rgb(128, 128, 136);
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 15vh;
+            width: 100vw;
+            color: white;
+            background-color: rgb(40, 40, 43);
+            overflow: hidden;
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calm Gecko Geeks</h1>
+        <nav class="navbar">
+            <a href="./">Home</a> 
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <main> 
+        <a href="about.html">
+            <button class="main-text">
+                <h2>Follow this link to my About Page</h2>
+            </button>      
+        </a>
+    </main>
+    <footer>
+        <nav class="navbar">
+            <a href="./">Home</a> 
+            <a href="about.html">About</a>
+        </nav>
+           
+        <ul class="footer-list">    
+            <li>
+                <p>Page built by <a href="calmgeckogeeks.com">Calm Gecko Geeks</a>&copy; 2025</p>
+            </li>
+            <li>
+                <p><em>Calm Gecko Geeks guarantee great commitment</em></p>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
