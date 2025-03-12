@@ -50,7 +50,7 @@ ul:nth-child(8){
 footer{
     width: 98%;
     background-color: navy;
-    position: absolute;
+    position: relative;
     bottom: 0;
     margin-bottom: 10px;
     margin-left: auto;
