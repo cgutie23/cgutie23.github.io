@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Gutierrez Midterm</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            background-color: rgb(30, 30, 30);
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        nav ul{
+            list-style-type: none;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+            margin-top: -30px;
+            z-index: 5;
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 0 5px;
+            line-height: 50px;
+            font-family: Montserrat, sans-serif;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: #1b9bff;
+            transition: 0.5s;
+        }
+        h1{
+            color: #1b9bff;
+            font-family: Montserrat, sans-serif;
+            font-size: 50px;
+            position: relative;
+            margin-top: auto;
+            margin-bottom: auto;
+            top: 20px;
+            padding-left: 20px;
+        }
+        nav{
+            height: 10vh;
+            width: 100%;
+            background-color: transparent;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+            display: none;
+        }
+        .active{
+            display: block;
+        }
+        h2{
+            font-family: Montserrat, sans-serif;
+            color: white;
+            margin-top: 50px;
+            text-align: center;
+            font-size: 35px;
+        }
+        span{
+            color: #1b9bff;
+        }
+        #what p{
+            font-family: Montserrat, sans-serif;
+            color: white;
+            font-size: 20px;
+            width: 500px;
+            line-height: 30px;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+        .what-figure{
+            position: absolute;
+            top: 25%;
+            right: 10%;
+        }
+        .what-img{
+            height: 70vh;
+            border-radius: 15px;
+        }
+        figcaption{
+           font-family: Montserrat, sans-serif;
+           color: white;
+           text-align: center;
+           margin-top: 5px;
+        }
+        #who p{
+            font-family: Montserrat, sans-serif;
+            color: white;
+            font-size: 20px;
+            width: 500px;
+            line-height: 30px;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+        .who-img{
+            height: 70vh;
+            border-radius: 15px;
+        }
+        .who-figure{
+            position: absolute;
+            right: 10%;
+            top: 25%;
+        }
+        #when p{
+            font-family: Montserrat, sans-serif;
+            color: white;
+            font-size: 20px;
+            width: 500px;
+            line-height: 30px;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+        .when-img{
+            height: 70vh;
+            border-radius: 15px;
+        }
+        .when-figure{
+            position: absolute;
+            right: 10%;
+            top: 25%;
+        }
+        #where p{
+            font-family: Montserrat, sans-serif;
+            color: white;
+            font-size: 20px;
+            width: 500px;
+            line-height: 30px;
+            margin-left: 7%;
+            margin-top: 5%;
+        }
+        .where-img{
+            height: 50vh;
+            border-radius: 15px;
+        }
+        .where-figure{
+            position: absolute;
+            right: 2%;
+            top: 25%;
+        }
+        #how p{
+            font-family: Montserrat, sans-serif;
+            color: white;
+            font-size: 20px;
+            width: 500px;
+            line-height: 30px;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+        .how-img{
+            height: 60vh;
+            border-radius: 15px;
+        }
+        .how-figure{
+            position: absolute;
+            right: 2%;
+            top: 25%;
+        }
+        #why p{
+            font-family: Montserrat, sans-serif;
+            color: white;
+            font-size: 20px;
+            width: 500px;
+            line-height: 30px;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+        .why-img{
+            height: 70vh;
+            border-radius: 15px;
+        }
+        .why-figure{
+            position: absolute;
+            right: 2%;
+            top: 25%;
+        }
+        footer{
+            position: relative;
+            bottom: 0;
+            background-color: rgb(16, 16, 17);
+            width: 100%;
+            height: 10vh;
+        }
+        footer p{
+            color: white;
+            font-family: Montserrat, sans-serif;
+            font-size: 18px;
+            text-align: center;
+        }
+        footer a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Guitar</h1>
+            <ul>
+                <li><a href="#what" data-target="what">About</a></li>
+                <li><a href="#who" data-target="who">Who</a></li>
+                <li><a href="#when" data-target="when">When</a></li>
+                <li><a href="#where" data-target="where">Where</a></li>
+                <li><a href="#how" data-target="how">How</a></li>
+                <li><a href="#why" data-target="why">Why</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content active" id="what">
+            <h2>What is <span>Guitar?</span></h2>
+            <p>The guitar, specifically the electric guitar, is a six string instrument that picks up the strings vibration through a magnetic pickup, which is then amplified through an amplifier.</p>
+            <p>The electric guitar is an extremely versatile instrument, especially when paired with effect pedals and amplifiers to create multiple sounds from a single guitar. The electric guitar can be found in most if not all genres of music such as rock, all the way to gospel music.</p>
+            <figure class="what-figure">
+                <img src="images/guitar-setup.jpeg" alt="My guitar Setup" class="what-img">
+                <figcaption>My Current Guitar Setup</figcaption>
+            </figure>
+        </section>
+        
+        <section class="content" id="who">
+            <h2>About <span>Me</span></h2>
+            <p>My name is Christopher Gutierrez, and I am a computer science student at UNCC. When I am not coding, or trying to learn more about software, one of my favorite hobbies is playing guitar. I have been playing guitar for about five and a half years now. While my main instrument is guitar, I also play a couple of other instruments. These incude bass, drums, and piano.</p>
+            <p>I play guitar at my church and have been playing with my church teams for about 6 years. Since then I have completely fallen in love with music and it has become a part of my day to day life.</p>
+            <figure class="who-figure">
+                <img src="images/black-mountain-guitar.jpeg" alt="Me Playing Guitar" class="who-img">
+                <figcaption>Me Playing Guitar at a Church event</figcaption>
+            </figure>
+        </section>
+
+        <section class="content" id="when">
+            <h2>Time<span>line</span></h2>
+            <p>I started playing guitar near the end of 2019 just for fun, but since I was playing drums at church at the time, I did not take it very seriously. during 2020 is when I started to take it a lot more seriously and started to really fall in love with it. I started by learning the basics like open chords and power chords. Thankfully during that time I was working so I was able to buy a decent beginner guitar and beginner amp.</p>
+            <p>After learning the basics, I started to learn songs and chord progressions. After learning solos, I fell in love even more, this is when I made the most progress in my journey in playing guitar and I realized that I wanted to take it more seriously.</p>
+            <figure class="when-figure">
+                <img src="images/first-event-guitar.PNG" alt="My First Event 2021" class="when-img">
+                <figcaption>Playing at my First Event in 2021</figcaption>
+            </figure>
+        </section>
+
+        <section class="content" id="where">
+            <h2>Loca<span>tions</span></h2>
+            <p>In 2021, I played at the first live event that was outside of my church. I loved being able to travel to different cities and play the instrument I love. I got this opportunity again in 2022 and since then have played in various different cities. These include Hendorsonville, NC, Charlotte, NC, Belmont, NC, Greensbro, NC, Black Mountain, NC, and Buford, GA.</p>
+            <p>The best part of being able to play out of town is meeting new musicians and making meaningful connections. Every time I get to play with new musicians, I learn so much about music and it always makes me a better musician. While making the trips and hauling all of my gear can get stressful, it is always worth it for me and they are always trips that I will never forget.</p>
+            <figure class="where-figure">
+                <img src="images/buford-ga-guitar.PNG" alt="Event in Buford, GA" class="where-img">
+                <figcaption>Buford, GA (I am in a white shirt, second from right)</figcaption>
+            </figure>
+        </section>
+
+        <section class="content" id="how">
+            <h2>How Did I <span>Learn?</span></h2>
+            <p>When I first picked up a guitar, I had no idea how to do anything with it. I first started learning by watching beginner tutorials on youtube that helped me understand the absolute basics like each part of the guitar and a couple of open chords. After I got a grasp of the basics of the guitar, I started to learn different songs, still using YouTube to look up different song tutorials.</p>
+            <p>After a while, I got stuck in what guitarists call "the rut". This means that I just had no idea where else to go, what to learn, and while I had made a lot of progress since my starting days, I felt stuck. I then decided to invest in one on one lessons with a teacher and this is one of the best decisions I have made. I started to see a lot of progress and learned about a lot of things that I do not believe I could have learned without my teacher.</p>
+            <p>After the time that I spent with a teacher, the guitar really 'opened' up for me. This allowed me to be able to explore different things and since then, I have learned alot by just sitting down and trying different things up and down the neck.</p>
+            <figure class="how-figure">
+                <img src="images/first-guitar.jpeg" alt="First Guitar" class="how-img">
+                <figcaption>Going Home With my First Guitar</figcaption>
+            </figure>
+        </section>
+
+        <section class="content" id="why">
+            <h2>Why <span>Guitar?</span></h2>
+            <p>Guitar is my favorite instrument because being able to create music with my hands is an awesome feeling that I never get tired of. Unlike the piano, being able to do things like rake the strings, bend the strings, vibrato, harmonics, etc. just add so much more feel and make the instrument feel more personal to me. Feeling the strings vibrate along with the pitch of the song is an unexplainable feeling.</p>
+            <p>Apart from just playing guitar in my room, I love to play live. Playing live is just a whole different world than just sitting in a room by yourself. The added pressure of knowing you don't have a redo, the flow of making up different parts on the spot, the nerves, and the physical vibrations you can feel from the drums on the stage all make for such a unique and unforgettable experience that I wish everyone could experience. These are a few reasons why I love to play guitar so much.</p>
+            <figure class="why-figure">
+                <img src="images/two-guitars.jpeg" alt="Two of my Guitars" class="why-img">
+                <figcaption>My Two Current Electric Guitars</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>Page built by <a href="itis3135/calmgeckogeeks.com/index.html">Calm Gecko Geeks</a>&copy; 2025</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('section');
+
+            links.forEach((link) => {
+                link.addEventListener('click', (e) => {
+                    //Prevent default scroll behavior
+                    e.preventDefault();
+
+                    //Hide all sections
+                    sections.forEach((section) => {
+                        section.classList.remove('active');
+                    });
+
+                    //Get target section id from the clicked link
+                    const targetId = link.getAttribute('data-target');
+                    const targetSection = document.getElementById(targetId);
+
+                    //Show the corresponding section
+                    targetSection.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
