@@ -73,6 +73,45 @@ footer p{
     text-align: center;
     
 }
+.simple-table{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.simple-table th, .simple-table td{
+    border: 1px solid black;
+}
+.table-h3{
+    font-family: Montserrat, sans-serif;
+    color: navy;
+    text-align: center;
+}
+ol li{
+    text-align: center;
+    list-style-position: inside;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 10px;
+}
+.complex-table{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Montserrat, sans-serif;
+    border: 2px solid navy;
+    border-collapse: collapse;
+}
+.complex-table th, .complex-table td{
+    border: 2px solid navy;
+    margin: 10px;
+    padding: 0.5rem;
+}
+.header-row{
+    background-color: rgb(48, 48, 177);
+    color: white;
+}
+.complex-table tr:nth-child(even){
+    background-color: rgba(73, 73, 197, 0.5);
+}
+
 
 /*Tablet accessibility*/
 @media screen and ( min-width: 601px ) and ( max-width: 980px ){
